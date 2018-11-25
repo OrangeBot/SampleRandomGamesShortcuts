@@ -1,0 +1,8 @@
+*.pyc
+
+resources/TemplateShortcut.url
+resources/GamesShortcuts/
+resources/FullGamesList.txt
+dummy_script.py
+Examples/
+Plan.py
