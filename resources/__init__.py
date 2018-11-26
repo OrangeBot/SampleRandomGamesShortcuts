@@ -4,6 +4,7 @@ import os
 verbose = False
 
 basic_sample_size = 5
+days_to_keep_around = 4
 
 
 desktop_path = "C:\\Users\\Petr\\Desktop"
@@ -25,7 +26,9 @@ def get_games_list():
 lib_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 games_shortcuts_folder = os.path.join(lib_root, 'resources', 'GamesShortcuts')
 app_data_path = os.path.join(lib_root, 'resources', 'app_data.json')
-app_data = dict()
+app_data = dict(current_shortcuts = [])
+
+shortcut_placeholder_path = os.path.join(lib_root, 'resources', 'ShortcutPlaceholder')
 
 #constants
 # desktop

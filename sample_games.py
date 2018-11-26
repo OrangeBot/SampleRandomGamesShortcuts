@@ -13,7 +13,7 @@ def main(verbose):
         print("Starting random game sample generation")
 
     from lib import update_games_shortcuts
-    today_games = update_games_shortcuts(hardcode_mode=True)
+    update_games_shortcuts(hardcode_mode=True)
 
     if verbose:
         print("Games shortcuts generation finished")
